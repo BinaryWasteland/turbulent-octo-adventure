@@ -1,0 +1,455 @@
+/*
+Theme Name: GregRJacobs Parallax Site
+Description: Simple Parallax Scrolling Effect and digital resume for GregRJacobs.com
+Author: Greg R. Jacobs
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+:focus {
+  outline: 0; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*= GENERAL STYLING
+--------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 90%;
+    overflow-x: hidden; } }
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 90%;
+    overflow-x: hidden; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+header {
+  width: 100%;
+  background: url("../img/header-bg.png");
+  height: 80px;
+  position: fixed;
+  margin-top: 30px; }
+  @media only screen and (max-width: 640px) {
+    header {
+      position: absolute; } }
+
+h1 {
+  font-family: "Arvo";
+  font-weight: normal;
+  font-size: 55px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-family: "Arvo";
+  font-weight: normal;
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  margin: 5px 0;
+  padding: 0;
+  z-index: 1;
+  position: relative; }
+
+/* unvisited link */
+a :link {
+  color: #333; }
+a :visited {
+  color: #333; }
+a :hover {
+  color: #999; }
+a .lpanel {
+  float: left;
+  color: #e1e1e1;
+  font-size: 12px;
+  font-family: "Wellfleet";
+  text-decoration: none;
+  margin: 7px 11px; }
+a .lpanel:hover {
+  color: #fff; }
+a .rpanel {
+  float: right;
+  color: #e1e1e1;
+  font-size: 12px;
+  font-family: "Wellfleet";
+  text-decoration: none;
+  margin: 7px 11px; }
+a .rpanel:hover {
+  color: #fff; }
+
+.center {
+  margin: 0 auto; }
+
+.content {
+  margin: 0 auto;
+  width: 960px;
+  position: relative; }
+  @media only screen and (max-width: 640px) {
+    .content {
+      margin: 0 auto;
+      width: auto; } }
+
+.clear {
+  clear: both; }
+
+/*= HEADER & NAVIGATION
+--------------------------------------------------------*/
+#logo a {
+  color: #fff;
+  text-decoration: none;
+  float: left;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 10%;
+  color: #fff;
+  font-family: "Wellfleet";
+  font-weight: bold; }
+
+#nav {
+  float: right;
+  margin-top: 20px; }
+  #nav ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    list-style: none; }
+  #nav li {
+    margin-top: 9px;
+    float: left;
+    padding-left: 21px; }
+    #nav li a {
+      color: #fff;
+      opacity: 0.6;
+      font-size: 15px;
+      text-decoration: none;
+      font-family: 'Wellfleet'; }
+      @media only screen and (max-width: 640px) {
+        #nav li a {
+          display: none; } }
+      #nav li a .active {
+        color: #fff;
+        opacity: 1;
+        border-bottom: 2px solid #fff; }
+      #nav li a :hover {
+        color: #fff;
+        opacity: 1; }
+
+#menu-icon {
+  display: hidden;
+  width: 48px;
+  height: 48px;
+  background: url(/img/menu-alt.png) center; }
+  #menu-icon a :hover {
+    background-color: #444;
+    border-radius: 4px 4px 0 0; }
+  @media only screen and (max-width: 640px) {
+    #menu-icon {
+      display: none; } }
+
+/*= QUOTES AND SOME ELEMENTS
+--------------------------------------------------------*/
+.info {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  margin: 8px auto;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.contactinfo {
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  margin: 8px auto;
+  padding-left: 10%;
+  padding-right: 10%; }
+  .contactinfo a {
+    color: #FFF; }
+
+.contactname {
+  font-family: Oswald;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  margin: 8px auto;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.social {
+  display: inline-block;
+  margin: 8px auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  height: 33px; }
+  .social img {
+    display: inline-block;
+    margin-right: 5px;
+    opacity: 0.5; }
+  .social img:hover {
+    opacity: 1; }
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+#slide1, #slide2 {
+  width: 100%; }
+
+#slide1 {
+  background: url("../img/coding_main.jpg") 50% 0 no-repeat fixed;
+  color: #fff;
+  height: 600px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover;
+  z-index: 99; }
+
+#slide2 {
+  background-color: #fff;
+  color: #333333;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0; }
+
+#slide3 {
+  background: url(../img/Egypt.jpg) 50% no-repeat fixed;
+  color: #fff;
+  height: 600px;
+  padding: 170px 0 0 0;
+  background-size: cover; }
+
+#slide4 {
+  background-color: #fff;
+  color: #333333;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0; }
+
+#slide5 {
+  background: url(../img/Wedding.jpg) 50% 0 no-repeat fixed;
+  height: 200px;
+  margin: 0 auto;
+  padding: 250px 0;
+  color: #fff;
+  background-size: cover; }
+
+#slide6 {
+  background-color: #fff;
+  color: #333333;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0; }
+
+#slide7 {
+  background: url(../img/Fun.jpg) 50% 0 no-repeat fixed;
+  height: 200px;
+  margin: 0 auto;
+  padding: 250px 0;
+  color: #fff;
+  background-size: cover; }
+
+#slide8 {
+  background-color: #fff;
+  color: #333333;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0; }
+
+#slide9 {
+  background: url(../img/Dreamforce.jpg) 50% 0 no-repeat fixed;
+  height: 200px;
+  margin: 0 auto;
+  padding: 250px 0;
+  color: #fff;
+  background-size: cover; }
+  @media only screen and (max-width: 640px) {
+    #slide9 {
+      background-position-x: -115px; } }
+
+#slide10 {
+  background: #333 50% 0 no-repeat fixed;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  color: #fff;
+  background-size: cover; }
+
+#slide11 {
+  background-image: linear-gradient(#333, #000);
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #fff;
+  background-size: cover; }
+
+/*= FOOTER
+--------------------------------------------------------*/
+#copyright {
+  color: #fff;
+  font-family: "Wellfleet";
+  font-size: 14px;
+  margin-top: 100px;
+  text-align: center; }
+  #copyright a {
+    text-decoration: none;
+    color: #fff; }
+
+form {
+  margin: 0;
+  padding-left: 10%; }
+
+form label {
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: normal;
+  margin-bottom: .2em;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-size: 13px;
+  line-height: 13px;
+  color: #e6e6e1;
+  text-shadow: 0px -1px #202020; }
+  form label .error {
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 12px;
+    line-height: 12px;
+    color: #c0392b; }
+
+form input[type="text"], form textarea {
+  margin-bottom: 1.25em;
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 14px;
+  line-height: 14px;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  background: #e6e6e6;
+  border: 1px solid #191919;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em; }
+
+form input[type="text"]:focus, form textarea:focus {
+  border-color: #191919;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
+form input[type="text"][disabled], form textarea[disabled] {
+  background: #fff; }
+
+form input[type="text"].error, form textarea.error {
+  background: #e6e6e6;
+  border-color: #c0392b; }
+
+fieldset {
+  border: 0px;
+  margin: 0;
+  padding: 0; }
+
+.required {
+  color: #e9266d; }
+
+#success, #error {
+  display: none; }
+
+#success span, #error span {
+  font-family: "Wellfleet";
+  display: block;
+  position: absolute;
+  top: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 150%; }
+
+#success span p, #error span p {
+  margin-top: 6em; }
+
+#success span p {
+  color: #22B35B; }
+
+#error span p {
+  color: #c0392b; }
+
+#name, #email, #subject, #message, #captcha {
+  width: 90%;
+  display: block; }
+
+#submit {
+  display: block; }
+
+.right-form-side {
+  float: right;
+  width: 49%;
+  display: block; }
+
+.left-form-side {
+  float: left;
+  width: 49%;
+  display: block; }
+
+.under-form-left {
+  float: left;
+  width: 49%;
+  display: block; }
+
+.under-form-right {
+  float: right;
+  width: 49%;
+  display: block;
+  color: #CC1F4A; }
+
+.contact-form-header {
+  color: white; }
+
+#errroTxt {
+  color: #CC1F4A; }
